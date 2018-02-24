@@ -99,7 +99,7 @@ db.userDao().all
 Room has two dependencies: the runtime and the annotation processor.
 The annotation processor visites the classes and members annotated with Room's annotations (like *@Database* or *@Entity*) and generates implementation code upon that.
 
-```kotlin
+```gradle
 apply plugin: 'kotlin-kapt'
 ...
 dependencies {
@@ -130,6 +130,7 @@ val db = Room
           .allowMainThreadQueries() // Don't do this in production.
           .fallbackToDestructiveMigration() // Don't do this in production.
           .build()
+```
 
 *allowMainThreadQueries()*- in production code, don't set it, of course. If not set, Room will raise an exception if operations are issued on that main tread. Instead, execute them by 
 
