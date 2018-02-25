@@ -45,7 +45,7 @@ fun databaseWriteAndRead(db: AppDatabase): String {
 
 ## Using Android's AsyncTask
 
-Android provides it's own (AsyncTask|https://developer.android.com/reference/android/os/AsyncTask.html):
+Android provides it's own [AsyncTask](https://developer.android.com/reference/android/os/AsyncTask.html):
 
 > AsyncTask enables proper and easy use of the UI thread. This class allows you to perform background operations and publish results on the UI thread without having to manipulate threads and/or handlers. [...] AsyncTasks should ideally be used for short operations (a few seconds at the most.) [...] An asynchronous task is defined by a computation that runs on a background thread and whose result is published on the UI thread.
 
@@ -102,7 +102,7 @@ launch(UI) {
     Toast.makeText(applicationContext, userList, LENGTH_LONG).show()
 }
 ``` 
-Look cleaner that Android's AsyncTask, doesn't it?
+Look cleaner that Android's AsyncTask, doesn't it? We got rid of the AsyncTask implementation class, completely.
 
 ## Using ReactiveX
 
