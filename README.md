@@ -7,9 +7,6 @@ It's part of Android Archticture Components:
 Room landing page:
 https://developer.android.com/topic/libraries/architecture/room.html
 
-This example is based on an official Android training: 
-https://developer.android.com/training/data-storage/room/index.html
-
 Architecture Components:
 https://developer.android.com/topic/libraries/architecture/index.html
 There's lots of docs out there for Architecture components.
